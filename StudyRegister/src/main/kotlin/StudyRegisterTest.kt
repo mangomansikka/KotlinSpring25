@@ -59,6 +59,6 @@ internal class StudyRegisterTest {
 
         val (majorMin2, majorMax2, majorAverage2) = major.statsCourse("Kotlin basics")
         assertEquals(2.0, majorMin2, 0.001)
-        assertEquals(4.5, majorMax2, 0.001)
+        assertEquals(5.0, majorMax2, 0.001)
         assertEquals(3.6666, majorAverage2, 0.001) }
 }

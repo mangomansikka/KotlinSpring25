@@ -10,12 +10,21 @@ repositories {
 }
 
 dependencies {
+    implementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.1")
     testImplementation(kotlin("test"))
+}
+
+sourceSets {
+    test {
+        kotlin.srcDir("src/test/kotlin")
+    }
 }
 
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(17)
 }

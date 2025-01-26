@@ -1,13 +1,15 @@
-class Human {
+open class Human(name : String, age: Int) {
     var name: String = ""
     var age: Int = 0
 
-}
+    init {
+        this.name = name
+        this.age = age
+    }
 
     fun getOlder() {
-        val human = Human()
-
-        human.age += 1
-        println("Happy birthday ${human.name}! You are now ${human.age}")
-
+        age++
     }
+
+}
+
