@@ -1,25 +1,22 @@
 plugins {
-    kotlin("jvm") version "1.8.10"
+    kotlin("jvm")
 }
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    gradlePluginPortal()
     mavenCentral()
 }
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation(kotlin("stdlib-jdk8"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
 tasks.test {
     useJUnitPlatform()
-    doNotTrackState("Disabling state tracking to avoid 'Cannot access output property' error")
 }
-
 kotlin {
     jvmToolchain(17)
 }
