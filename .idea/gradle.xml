@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CommandLineLotto" />
+            <option value="$PROJECT_DIR$/LottoWithThread" />
             <option value="$PROJECT_DIR$/StudyRegister" />
             <option value="$PROJECT_DIR$/basics" />
             <option value="$PROJECT_DIR$/complex" />
